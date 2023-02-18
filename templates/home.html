@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <style>
+      button{
+        background-color: green;
+        border: none;
+        margin-left: 40%;
+      }
+    </style>
   </head>
   <body>
-    <h1>let'sssss goooooo!</h1>
+    <h1>welcome to SE Quiz</h1>
+    <p>{% for job in jobs %}
+         <h2>{{ job['type'] }}</h2>
+       {% endfor %}    
+    </p>
+    <button>Start Quiz</button>
   </body>
 </html>
