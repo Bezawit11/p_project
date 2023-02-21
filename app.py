@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 JOBS =[{
   'id': 1,
-  'type': 'C'
+  'question': 'Who made is c?'
 },
       {
         'id': 2,
-        'type': 'Python'
+        'question': 'Who made python?'
       }]
 @app.route("/")
 def hello():
