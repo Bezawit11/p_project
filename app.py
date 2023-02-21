@@ -19,8 +19,10 @@ with app.app_context():
 @app.route("/")
 def hello():
   product = Product.query.all()
-  return render_template('home.html', product=product)
+  return render_template('login.html', product=product)
 
 
-if __name__ == "__main__":
+  
+
+if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
