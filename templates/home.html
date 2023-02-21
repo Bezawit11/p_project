@@ -11,8 +11,9 @@
   </head>
   <body>
     <h1 style='text-align: center;'>welcome to SE Quiz</h1>
-    <p>{% for job in jobs %}
-         {% include 'q.html' %}
+    <p>{% for p in product %}
+         <p>{{p.name}} ------ {{p.price}}</p>
+          
        {% endfor %}    
     </p>
     <button>Start Quiz</button>
