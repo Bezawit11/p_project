@@ -12,16 +12,14 @@ class Product(db.Model):
     self.name = name
     self.price = price
 
-  
+
 with app.app_context():
     db.create_all()
 
 @app.route("/")
 def hello():
   product = Product.query.all()
-  return render_template('login.html', product=product)
-
-
+  return render_template('home.html', product=product)
   
 
 if __name__ == '__main__':
